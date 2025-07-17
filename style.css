@@ -1,0 +1,130 @@
+/* === BACKGROUND === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === GLASS EFFECT === */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 750px;
+  width: 90%;
+  color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.slogan {
+  font-style: italic;
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.services {
+  list-style: square;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #ffd700;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.info h3 {
+  color: #ffeb3b;
+}
+
+.icon {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* === DOWNLOAD SECTION === */
+.download-section {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid #ffffff44;
+  padding-top: 1.5rem;
+}
+
+.download-section h3 {
+  color: #ffeb3b;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #ff9800;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.download-btn:hover {
+  background-color: #e58c00;
+}
+
+/* === FADE IN === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .glass {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .services {
+    font-size: 1rem;
+  }
+}
